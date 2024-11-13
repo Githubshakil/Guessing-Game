@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing game</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            width: 400px;
+            padding: 20px 30px;
+            border: 1px solid goldenrod;
+            border-radius: 20px;
+            text-align: center;
+        }
+        button{
+            border: none;
+            padding: 10px 20px;
+            background-color: goldenrod;
+            border-radius: 10px;
+            color: white;
+            font-weight: 800;
+            transition: 0.4s;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        button:hover{
+            background-color: rgb(87, 66, 14);
+            color: goldenrod;
+            font-weight: 800;
+        }
+        input{
+            padding: 10px;
+            border-color: goldenrod;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            font-weight: 600;
+            
+        }
+        .error{
+            font-size: 30px;
+            
+            
+        }
+        .playertwoinput{
+            display: none;
+        }
+        .playertwobutton{
+            display: none;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 600;
+            font-family:'Times New Roman', Times, serif;            color: goldenrod;
+            display: none;
+        }
+        h2{
+            font-size: 30px;
+            font-weight: 600;
+            font-family:'Times New Roman', Times, serif;
+            color: goldenrod;
+            
+        }
+        img{
+            display: none;
+           margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Number Gussing Game</h1>
+    <div class="main">
+        <div class="player_one">
+            <h2 class="heading">Player 1</h2>
+            <h3>Chances: <span></span></h3>
+            <img src="./images/congrts.gif" alt="congrts">
+            <input class="playeroneinput" type="password" placeholder="Input a Number Less then 10">
+            <button class="playeronebutton">Start</button> <br/>
+            <input class="playertwoinput" type="password" placeholder="Guess the Number">
+            <button class="playertwobutton">Guess</button> <br/>
+            <small class="error"></small>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
