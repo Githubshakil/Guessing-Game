@@ -1,7 +1,22 @@
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
 .playertwoinput{
     display: none;
 }
 
 .playertwobutton{
+    display: none;
+}
+h2{
+    display: none;
+}
+img{
     display: none;
 }
