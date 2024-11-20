@@ -1,22 +1,79 @@
-
-
-body{
+body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 400px;
+    padding: 20px 30px;
+    border: 1px solid goldenrod;
+    border-radius: 20px;
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    color: white;
+    font-weight: 800;
+    transition: 0.4s;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+button:hover {
+    background-color: rgb(87, 66, 14);
+    color: goldenrod;
+    font-weight: 800;
+}
+
+input {
+    padding: 10px;
+    border-color: goldenrod;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 600;
+
 }
 
 
-.playertwoinput{
+.playertwoinput {
     display: none;
 }
 
-.playertwobutton{
+.playertwobutton {
     display: none;
 }
-h2{
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: goldenrod;
+}
+
+h2 {
+
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: goldenrod;
     display: none;
 }
-img{
+
+img {
     display: none;
+    margin: 0 auto;
+}
+
+.error {
+    font-size: 30px;
+
+
 }
