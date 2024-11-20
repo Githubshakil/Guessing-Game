@@ -60,7 +60,8 @@ playertwobutton.addEventListener("click", function() {
                         heading.innerHTML = "Player 2 Winner";
                         img.style.display = "block";
                         chancesheading.style.display = "none";
-                        displayControll("all");
+                        // displayControll("all");
+                        
                     } else if (count == 0) {
                         heading.innerHTML = "Player 3";
                         count = 1; // Reset count for the next player
@@ -96,7 +97,7 @@ playerthreebutton.addEventListener("click", function() {
                         heading.innerHTML = "Player 3 Winner";
                         img.style.display = "block";
                         chancesheading.style.display = "none";
-                        displayControll("all");
+                        // displayControll("all");
                     } else if (count == 0) {
                         heading.innerHTML = "Player 4";
                         count = 1; // Reset count for the next player
@@ -132,12 +133,12 @@ playerfourbutton.addEventListener("click", function() {
                         heading.innerHTML = "Player 4 Winner";
                         img.style.display = "block";
                         chancesheading.style.display = "none";
-                        displayControll("all");
+                        // displayControll("all");
                     } else if (count == 0) {
                         heading.innerHTML = "Player 1 Winner";
                         img.style.display = "block";
                         chancesheading.style.display = "none";
-                        displayControll("all");
+                        // displayControll("all");
                         
                     }
                 } else {
@@ -193,7 +194,23 @@ function displayControll(type) {
         playertwobutton.style.display = "inline-block";
     } else if (type == "player1none") {
         playeroneinput.style.display = "none";
-        playeronebutton}
+        playeronebutton.style.display = "none";
+    } else if (type == "player2none") {
+        playertwoinput.style.display = "none";
+        playertwobutton.style.display = "none";
+    }else if (type == "player3block") {
+        playerthreeinput.style.display = "inline-block";
+        playerthreebutton.style.display = "inline-block";
+    }else if (type == "player3none") {
+        playerthreeinput.style.display = "none";
+        playerthreebutton.style.display = "none";
+    }else if (type == "player4block") {
+        playerfourinput.style.display = "inline-block";
+        playerfourbutton.style.display = "inline-block";
+    }else if (type == "player4none") {
+        playerfourinput.style.display = "none";
+        playerfourbutton.style.display = "none";
+    }
     }
 
 
