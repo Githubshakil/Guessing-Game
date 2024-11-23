@@ -4,10 +4,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.651);
 }
 
 .main {
-    width: 400px;
+    width: 800px;
     padding: 20px 30px;
     border: 1px solid goldenrod;
     border-radius: 20px;
@@ -50,6 +51,20 @@ input {
 .playertwobutton {
     display: none;
 }
+.playerthreeinput {
+    display: none;
+}
+
+.playerthreebutton {
+    display: none;
+}
+.playerfourinput {
+    display: none;
+}
+
+.playerfourbutton {
+    display: none;
+}
 
 h1 {
     font-size: 30px;
@@ -59,8 +74,8 @@ h1 {
 }
 
 h2 {
-
-    font-size: 30px;
+    margin: 10px 50px;
+    font-size: 25px;
     font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
     color: goldenrod;
@@ -70,6 +85,7 @@ h2 {
 img {
     display: none;
     margin: 0 auto;
+    border-radius: 20px;
 }
 
 .error {
